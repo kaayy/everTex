@@ -1,0 +1,4 @@
+EverTex is a Chrome extension that shows LaTeX formulas in EverNote's web interface using MathJax. 
+
+With EverTex you can write formulas in MathJax syntax, i.e., $$...$$, \[...\], and \(...\), of which \(...\) is for inline formula.
+
