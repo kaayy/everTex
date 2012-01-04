@@ -1,0 +1,17 @@
+{
+  "name": "everTex",
+  "version": "1.0",
+  "description": "showing LaTex formulas in Evernote's web interface",
+  "homepage_url": "http://github.com/kaayy/",
+  "icons": { "16": "sigma16.png",
+             "48": "sigma48.png",
+	     "128": "sigma128.png" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.evernote.com/Home.action*","https://www.evernote.com/view.jsp*"],
+      "js": ["everTex.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+

@@ -1,4 +1,13 @@
-EverTex is a Chrome extension that shows LaTeX formulas in EverNote's web interface using MathJax. 
+EverTex version 1.1
+---------------
+
+EverTex is a Chrome/Firefox extension that shows LaTeX formulas in EverNote's web interface using MathJax. 
+
+*ATTENTION*
+Due to some bugs, the current Chrome version of EverTex does *NOT* work now. The Greasemonkey version works well in Firefox.
+
+The Greasemonkey script for Firefox is also available at:
+http://userscripts.org/scripts/show/122150
 
 With EverTex you can write formulas with MathJax grammar in EverNote webpage's WYSIWYG editor and preview them in the mathematical way.
 
