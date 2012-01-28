@@ -34,14 +34,29 @@ function iframeload_listener(iframename){
   return;
 }
 
-window.addEventListener('load', function(){
-  if(document.getElementById(iframename_1)!=null){
-    document.getElementById(iframename_1).addEventListener("load",function(){iframeload_listener(iframename_1);},false);
-}
-  if(document.getElementById(iframename_0)!=null){
-    document.getElementById(iframename_0).addEventListener("load",function(){iframeload_listener(iframename_0);},false);
-}
 
-},
-false);
+// Load code idea borrowed from GmailTeX Official
+//   http://userscripts.org/scripts/review/96444
+
+var attempt=0;
+
+var waitENLoad=setInterval(function(){
+  if (attempt++>100){
+    clearInterval(waitENLoad);
+    return;
+  }
+  var frame1=document.getElementById(iframename_1);
+  if(frame1) {
+    document.getElementById(iframename_1).addEventListener("load",function(){iframeload_listener(iframename_1);},false);
+    clearInterval(waitENLoad);
+    return;
+  }
+  var frame0=document.getElementById(iframename_0);
+  if(frame0) {
+     document.getElementById(iframename_0).addEventListener("load",function(){iframeload_listener(iframename_0);},false);
+     clearInterval(waitENLoad);
+     return;
+  }
+  return;
+}, 400);
 
