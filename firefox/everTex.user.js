@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           EverTex
 // @namespace      http://www.github.com/kaayy
-// @version        1.1
+// @version        1.2
 // @description    Display formulas in EverNote
 // @include        https://www.evernote.com/Home.action*
 // @include        https://www.evernote.com/view/*
