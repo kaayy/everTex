@@ -10,6 +10,8 @@ Due to some bugs, the current Chrome version of EverTex does *NOT* work. The Gre
 The Greasemonkey script for Firefox is also available at:
 http://userscripts.org/scripts/show/122150
 
+A recent version of Firefox is required.  EverTex does not work under Firefox 3.6.10.
+
 With EverTex you can write formulas with MathJax grammar in EverNote webpage's WYSIWYG editor and preview them in the mathematical way.
 
 Just like MathJax, the formulas should be surrounded by $$...$$, \[...\], and \(...\) to be properly rendered.
