@@ -1,17 +1,21 @@
 // ==UserScript==
 // @name           EverTex
 // @namespace      http://www.github.com/kaayy
-// @version        1.2
+// @version        1.3
 // @description    Display formulas in EverNote
 // @include        https://www.evernote.com/Home.action*
 // @include        https://www.evernote.com/view/*
+// @include        https://www.evernote.com/pub/*
+// @include        https://www.evernote.com/shard/*
 // ==/UserScript==
 // This is the Greasemonkey version of EverTex. 
 // This userscript displays formulas in EverNote's web interface via MathJax.
 // Source Code available at: https://github.com/kaayy/everTex
 // Author: kaayy
-// Date: Jan. 2012
+// Date: Aug. 2012
 // Thanks to Lars Kindler, who gave me the first version of this userscript.
+//
+// And thanks to Anna Hambitzer for her suggestion to render the shared pages.
 
 
 var iframename_0='EN_IframePanel_0';
